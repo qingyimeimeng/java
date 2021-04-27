@@ -1,1 +1,19 @@
+/*author @qingyimeimeng
+ * 
+ */
 
+public class test3 {
+		public static void main(String[] args) {
+		//水仙花数是指一个三位数其各位数字的立方和等于该数本身
+			for(int i=100;i<1000;i++)
+			{
+				int geWei=i%10;
+				int shiWei=i/10%10;
+				int baiWei=i/100;
+				if(i==geWei*geWei*geWei+shiWei*shiWei*shiWei+baiWei*baiWei*baiWei)
+				{
+					System.out.println(i);
+				}
+			}
+		}
+}
